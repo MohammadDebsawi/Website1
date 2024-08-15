@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --bg-color: #160d07;
+    --text-color: #fffdee;
+    --main-color: #ffa86a;
+    --other-color: #d6d4c8;
+    --second-color: #ffffff4f;
+    --alt-color: #7d5537;
+    --h1-font: 7.5rem;
+    --h2-font: 5.5rem;
+    --p-font: 1.1rem;
+}
