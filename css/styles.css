@@ -89,3 +89,352 @@ header {
     display: none;
 }
 
+section {
+    padding: 90px 17% 80px;
+}
+
+.home{ 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+
+.home-text h1{
+    font-family: "Forum",serif;
+    font-size: var(--h1-font);
+    font-weight: 500;
+    margin: 22px 0;
+}
+
+.home-text h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-color);
+    font-family: "Forum",serif;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    padding: 0 8%;
+    transform: translateY(-50%);
+}
+
+.social i {
+    display: block;
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 28px 0;
+    transition: all .7s ease;
+}
+
+.social i:hover {
+    color: var(--main-color);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.arrow-box {
+    position: absolute;
+    bottom: 12%;
+    right: 35%;
+}
+
+.arrow-box i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: var(--bg-color);
+    border: 1px solid transparent;
+    font-size: 35px;
+    transition: all .7s ease;
+}
+
+.arrow-box i:hover {
+    background-color: transparent;
+    transform: scale(0.9) translateY(-5px);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+header.sticky{
+    background: linear-gradient(250.55deg,#120b07 0%, #311b0d 28.55%, #160d07 75.55%);
+    padding: 15px 8%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;  
+}
+
+.about-text h2{
+    font-family: "Forum",serif;
+    font-size: var(--h2-font);
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.about-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    text-transform: uppercase;
+    border: 1px solid var(--main-color);
+    border-radius: 0.8rem;
+    transition: all .7s ease;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--second-color);
+    color: var(--text-color);
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+.head-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.head-left h4 {
+    font-size: var(--h2-font);
+    font-weight: 500;
+    font-family: "Forum",serif;
+}
+
+.head-right h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.box-img img {
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform .7s ease;
+}
+
+.box {
+    position: relative;
+    background: linear-gradient(rgba(255,168,106,0.35) 0%,rgba(3,3,3,0.77) 64%,rgba(3,3,3) 100%);
+    padding: 40px 60px;
+    border: 1px solid #352317;
+    border-radius: 0.8rem;
+}
+
+.box h3{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 12px 0;
+    font-family: 'Forum',serif;
+}
+
+.box h5 {
+    font-size: 14px;
+    color: var(--other-color);
+    font-weight: 500;
+}
+
+.cart i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 0 0.8rem 0 0;
+}
+
+.box:hover img {
+    transform: scale(1.03) translateY(-6px);
+    cursor: pointer;
+}
+
+.box:hover h5 {
+    color: var(--main-color);
+}
+
+.exb-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.exb-img img {
+    max-width: 530px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.8rem;
+}
+
+.exb-text{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.row:not(:last-child){
+    border-bottom: 1px solid var(--main-color);
+    border-width: 40%;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.row h5{
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--other-color);
+    margin-bottom: 7px;
+    font-family: 'Forum',serif;
+    transition: all .7s ease;
+}
+
+.row a{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.row:hover h5{
+    color: var(--main-color);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.contact-content h2{
+    font-size: var(--h2-font);
+    font-weight: 500;
+    font-family: "Forum",serif;
+    margin-bottom: 40px;
+}
+
+.contact-content hr{
+    width: 15.3333%;
+    border: 1px solid var(--main-color);
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.contact-content:hover hr{
+    width: 20.3333%;
+}
+
+.contact-content p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.s-links a{
+    display: inline-block;
+    padding: 12px 35px;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--second-color);
+    transition: color .7s ease;
+    border-radius: 0.8rem;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.s-links a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.footer {
+    padding: 20px 14%;
+    color:  var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.copyright a{
+    color: var(--other-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.scroll-btnn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    font-size: 22px;
+}
