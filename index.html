@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Complete Responsive Website HTML CSS JS</title>
 
     <!-- box icons link -->
@@ -47,7 +48,7 @@
 
     <!-- Home -->
     <section class="home" id="home">
-      <div class="home-text">
+      <div class="home-text" data-aos="fade-up" data-aos-duration="1400">
         <h4>Carving Art</h4>
         <h1>
           Bringing <br />
@@ -59,27 +60,27 @@
         </p>
       </div>
 
-      <div class="home-img">
+      <div class="home-img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="./img/hero.png" alt="" />
       </div>
 
       <div class="social">
-        <a href="#"><i class="ri-facebook-fill"></i></a>
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-dribbble-line"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="200"><i class="ri-facebook-fill"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="300"><i class="ri-instagram-line"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="400"><i class="ri-dribbble-line"></i></a>
       </div>
 
-      <div class="arrow-box">
+      <div class="arrow-box"  data-aos="zoom-in-left" data-aos-duration="1400">
         <a href="#about"><i class="ri-arrow-down-line"></i></a>
       </div>
     </section>
 
     <!-- About -->
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="./img/about.png" alt="" />
       </div>
-      <div class="about-text">
+      <div class="about-text"  data-aos="fade-up" data-aos-duration="1400">
         <h2>
           Wood is my <br />
           passion
@@ -98,7 +99,8 @@
     <!-- Shop -->
     <section class="shop" id="shop">
       <div class="head-text">
-        <div class="head-left">
+        <div class="head-left"  data-aos="fade-up" data-aos-duration="1400"
+        data-aos-delay="200">
           <h4>Bost Selling</h4>
         </div>
         <div class="head-right">
@@ -106,7 +108,8 @@
         </div>
       </div>
 
-      <div class="shop-content">
+      <div class="shop-content"  data-aos="fade-up" data-aos-duration="1400"
+        data-aos-delay="300">
         <div class="box">
           <div class="box-img">
             <img src="./img/s1.png" alt="">
@@ -144,7 +147,8 @@
 
     <!-- Exhibitions -->
       <section class="exhibitions" id="exhibitions">
-        <div class="head-text">
+        <div class="head-text"   data-aos="fade-up" data-aos-duration="1400"
+        data-aos-delay="300">
           <div class="head-left">
             <h4>Exhibitions</h4>
           </div>
@@ -154,11 +158,12 @@
         </div>
 
         <div class="exb-content">
-          <div class="exb-img">
+          <div class="exb-img" data-aos="zoom-in" data-aos-duration="1400">
             <img src="./img/exb.png" alt="">
           </div>
 
-          <div class="exb-text">
+          <div class="exb-text"   data-aos="fade-up" data-aos-duration="1400"
+        data-aos-delay="200">
             <div class="row">
               <h5>Whispers in Wood: An Exploration of Nature's Beauty</h5>
               <a href="#">22 March 2024 - 25 March 2024</a>
@@ -181,7 +186,8 @@
 
     <!-- Contact -->
       <section class="contact" id="contact">
-        <div class="contact-content">
+        <div class="contact-content"   data-aos="fade-up" data-aos-duration="1400"
+        data-aos-delay="400">
           <h2>Let's Talk</h2>
           <hr>
           <p>8500 Lorem Street, Chicago,IL 55030</p>
@@ -206,5 +212,11 @@
 
     <!-- javascript file link -->
     <script src="./javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        oppset:1,
+      });
+    </script>
   </body>
 </html>
